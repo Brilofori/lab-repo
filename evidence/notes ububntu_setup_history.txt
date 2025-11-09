@@ -16,7 +16,7 @@
    16  2025-11-08 06:55:57 apache2ctl -v
    17  2025-11-08 06:56:01 php -v
    18  2025-11-08 06:56:12 sudo apt update
-   19  2025-11-08 06:56:42 batman11
+   19  2025-11-08 06:56:42 REDACTED
    20  2025-11-08 06:58:11 sudo apt install -y php-gd php-xml php-mbstring php-curl php-zip
    21  2025-11-08 06:58:58 ls
    22  2025-11-08 06:59:19 sudo systemctl enable --now maria db
