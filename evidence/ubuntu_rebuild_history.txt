@@ -1,0 +1,61 @@
+    1  2025-11-08 06:55:46 sudo apt update && sudo apt upgrade -y
+    2  2025-11-08 06:55:46 sudo apt install -y openssh-server
+    3  2025-11-08 06:55:46 sudo apt install -y net-tools iproute2 curl
+    4  2025-11-08 06:55:46 sudo systemctl status ssh --no-pager
+    5  2025-11-08 06:55:46 sudo shutdown now
+    6  2025-11-08 06:55:46 sudo systemctl enable ssh 
+    8  2025-11-08 06:55:46 sudo systemctl status ssh 
+   10  2025-11-08 06:55:46 sudo ufw status
+   11  2025-11-08 06:55:46 sudo shutdown now
+   12  2025-11-08 06:55:46 sudo apt update
+   13  2025-11-08 06:55:46 sudo apt install -y virtualbox-guest-utils
+   14  2025-11-08 06:55:46 sudo reboot
+   16  2025-11-08 06:55:57 apache2ctl -v
+   18  2025-11-08 06:56:12 sudo apt update
+   20  2025-11-08 06:58:11 sudo apt install -y php-gd php-xml php-mbstring php-curl php-zip
+   22  2025-11-08 06:59:19 sudo systemctl enable --now maria db
+   23  2025-11-08 06:59:42 sudo systemctl enable --now mariadb
+   24  2025-11-08 07:01:19 sudo apt install -y mariadb-server php-mysql git wget unzip
+   25  2025-11-08 07:02:02 sudo systemctl enable --now mariadb
+   26  2025-11-08 07:02:45 sudo mysql_secure_installation
+   27  2025-11-08 07:07:52 sudo systemctl status mariadb  --no-pager
+   28  2025-11-08 07:36:03 sudo mariadb
+   31  2025-11-08 10:52:43 sudo git clone https://github.com/digininja/DVWA.git dvwa 
+   32* 2025-11-08 10:53:49 sudo chown -R www-data:www-data 
+   33  2025-11-08 11:03:17 sudo chmod -R 755 dvwa
+   35  2025-11-08 11:07:40 sudo cp config.inc.php.dist config.inc.php
+   37  2025-11-08 11:10:16 cd /var/www/html/dvwa/config
+   39  2025-11-08 11:10:48 sudo cp config.inc.php.dist config.inc.php
+   40  2025-11-08 11:11:20 sudo nano config.inc.php
+   41  2025-11-08 11:33:54 sudo a2enmod rewrite
+   42  2025-11-08 11:34:57 sudo systemctl restart apache2 
+   43  2025-11-08 11:37:30 sudo chown -R www-data:www-data /var/www/html/dvwa
+   44  2025-11-08 11:38:50 sudo chmod -R 755 /var/www/html/dvwa
+   45  2025-11-08 12:10:05 sudo apt install build-essential dkms linux-headers-$(uname -r)
+   48  2025-11-08 12:11:28 sudo apt install build-essential dkms linux-headers-$(uname -r)
+   49  2025-11-08 12:12:10 sudo mkdir /media/cdrom 
+   50  2025-11-08 12:13:26 sudo mount /dev/cdrom
+   51  2025-11-08 12:13:40 sudo mount /dev/cdrom /media/cdrom
+   53  2025-11-08 12:14:36 sudo ./VBroxLinux.Additions.run
+   54  2025-11-08 12:14:47 sudo ./VBoxLinux.Additions.run
+   55  2025-11-08 12:14:55 sudo ./VBoxLinuxAdditions.run
+   57  2025-11-08 12:23:28 git add evidence/*
+   66  2025-11-08 12:46:14 cp ~/ubuntu_setup_history.txt ~/evidence_* ~/lab_nmap.initial.txt ~/evidence_curl_setup_head.txt ~/evidence_curl_home_head.txt ~/evidence_apache_status.txt ~/evidence_php_version.txt ~/evidence_php_modules.txt ~/evidence_listen80.txt ~/evidence_dvwa_config.inc.php ~/lab_nmap_initial.txt ~lab-repo/evidence/ 2>/dev/null || true
+   77  2025-11-08 12:55:46 sudo systemctl status apache2 --no-pager > evidence/apache_status.txt
+   81  2025-11-08 13:05:50 curl -IL http://127.0.0.1/dvwa/ | sed -n '1,40p' > evidence/curl_dvwa_head.txt
+   82  2025-11-08 13:07:01 cat /var/www/html/dvwa/config/config.inc.php > evidence/dvwa_config/inc.php
+   83  2025-11-08 13:11:23 sudo find /var/www/html -type f -name "config.inc.php"
+   84  2025-11-08 13:25:15 sudo cp /var/www/html/dvwa/config.inc.php ~lab-repo/evidence/dvwa_config.inc.php
+   88  2025-11-08 13:40:19 sudo find /var/www/html -name config.inc.php
+   89  2025-11-08 13:41:23 sudo cp /var/www/html/config.inc.php evidence/dvwa_config.inc.php
+   91  2025-11-08 13:44:53 sudo cp /var/www/html/dvwa/config/config/inc/php ./evidence/dvwa_config.inc.php
+   92  2025-11-08 13:45:28 sudo cp /var/www/html/dvwa/config/config.inc/php ./evidence/dvwa_config.inc.php
+   93  2025-11-08 13:45:45 sudo cp /var/www/html/dvwa/config/config.inc.php ./evidence/dvwa_config.inc.php
+   95  2025-11-08 13:46:40 head -n 5 evidence/dvwa_config.inc.php
+   96  2025-11-08 13:47:29 git add evidence/dvwa_config.inc.php
+   97  2025-11-08 13:47:57 git commit -m "Add DVWA config evidence"
+   98  2025-11-08 13:48:02 git push
+   99  2025-11-08 13:55:08 cd ~ history | grep -E "sudo|mariadb|apache|chmod|git|curl|dvwa" > ~lab-repo/evidence/ubuntu_rebuild_history.txt
+  100  2025-11-08 13:56:13 cd ~ history | grep -E "sudo|mariadb|apache|chmod|chown|git|curl|dvwa" > ~/lab-repo/evidence/ubuntu_rebuild_history.txt
+  106  2025-11-08 14:06:29 cd ~ history | grep -E "sudo|mariadb|apache|chmod|chown|git|curl|dvwa" > ~/lab-repo/evidence/ubuntu_rebuild_history.txt
+  107  2025-11-08 14:11:20 history | grep -E "sudo|mariadb|apache|chmod|chown|git|curl|dvwa" > ~/lab-repo/evidence/ubuntu_rebuild_history.txt

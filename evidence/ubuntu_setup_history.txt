@@ -1,0 +1,76 @@
+    1  2025-11-08 06:55:46 sudo apt update && sudo apt upgrade -y
+    2  2025-11-08 06:55:46 sudo apt install -y openssh-server
+    3  2025-11-08 06:55:46 sudo apt install -y net-tools iproute2 curl
+    4  2025-11-08 06:55:46 sudo systemctl status ssh --no-pager
+    5  2025-11-08 06:55:46 sudo shutdown now
+    6  2025-11-08 06:55:46 sudo systemctl enable ssh 
+    7  2025-11-08 06:55:46 systemctl start ssh 
+    8  2025-11-08 06:55:46 sudo systemctl status ssh 
+    9  2025-11-08 06:55:46 ip a
+   10  2025-11-08 06:55:46 sudo ufw status
+   11  2025-11-08 06:55:46 sudo shutdown now
+   12  2025-11-08 06:55:46 sudo apt update
+   13  2025-11-08 06:55:46 sudo apt install -y virtualbox-guest-utils
+   14  2025-11-08 06:55:46 sudo reboot
+   15  2025-11-08 06:55:46 exit
+   16  2025-11-08 06:55:57 apache2ctl -v
+   17  2025-11-08 06:56:01 php -v
+   18  2025-11-08 06:56:12 sudo apt update
+   19  2025-11-08 06:56:42 batman11
+   20  2025-11-08 06:58:11 sudo apt install -y php-gd php-xml php-mbstring php-curl php-zip
+   21  2025-11-08 06:58:58 ls
+   22  2025-11-08 06:59:19 sudo systemctl enable --now maria db
+   23  2025-11-08 06:59:42 sudo systemctl enable --now mariadb
+   24  2025-11-08 07:01:19 sudo apt install -y mariadb-server php-mysql git wget unzip
+   25  2025-11-08 07:02:02 sudo systemctl enable --now mariadb
+   26  2025-11-08 07:02:45 sudo mysql_secure_installation
+   27  2025-11-08 07:07:52 sudo systemctl status mariadb  --no-pager
+   28  2025-11-08 07:36:03 sudo mariadb
+   29  2025-11-08 10:51:26 ls
+   30  2025-11-08 10:51:43 cd /var/www/html 
+   31  2025-11-08 10:52:43 sudo git clone https://github.com/digininja/DVWA.git dvwa 
+   32* 2025-11-08 10:53:49 sudo chown -R www-data:www-data 
+   33  2025-11-08 11:03:17 sudo chmod -R 755 dvwa
+   34  2025-11-08 11:05:42 cd /var/www/html
+   35  2025-11-08 11:07:40 sudo cp config.inc.php.dist config.inc.php
+   36  2025-11-08 11:09:40 ls
+   37  2025-11-08 11:10:16 cd /var/www/html/dvwa/config
+   38  2025-11-08 11:10:30 ls 
+   39  2025-11-08 11:10:48 sudo cp config.inc.php.dist config.inc.php
+   40  2025-11-08 11:11:20 sudo nano config.inc.php
+   41  2025-11-08 11:33:54 sudo a2enmod rewrite
+   42  2025-11-08 11:34:57 sudo systemctl restart apache2 
+   43  2025-11-08 11:37:30 sudo chown -R www-data:www-data /var/www/html/dvwa
+   44  2025-11-08 11:38:50 sudo chmod -R 755 /var/www/html/dvwa
+   45  2025-11-08 12:10:05 sudo apt install build-essential dkms linux-headers-$(uname -r)
+   46  2025-11-08 12:11:20 cd~
+   47  2025-11-08 12:11:23 cd ~
+   48  2025-11-08 12:11:28 sudo apt install build-essential dkms linux-headers-$(uname -r)
+   49  2025-11-08 12:12:10 sudo mkdir /media/cdrom 
+   50  2025-11-08 12:13:26 sudo mount /dev/cdrom
+   51  2025-11-08 12:13:40 sudo mount /dev/cdrom /media/cdrom
+   52  2025-11-08 12:13:58 cd /media/cdrom
+   53  2025-11-08 12:14:36 sudo ./VBroxLinux.Additions.run
+   54  2025-11-08 12:14:47 sudo ./VBoxLinux.Additions.run
+   55  2025-11-08 12:14:55 sudo ./VBoxLinuxAdditions.run
+   56  2025-11-08 12:23:12 cd ~/lab-repo
+   57  2025-11-08 12:23:28 git add evidence/*
+   58  2025-11-08 12:25:27 pwd
+   59  2025-11-08 12:25:46 ls - la
+   60  2025-11-08 12:25:53 ls -la
+   61  2025-11-08 12:30:23 pwd
+   62  2025-11-08 12:36:48 find ~ -maxdepth 2 -type f \( -iname '*ubuntu_setup_history*' -o -iname '*evidence_*' -o -iname  'lab_nmap-initial.txt' -o -iname 'evidence*' -o -iname '*.txt' \) -print 
+   63  2025-11-08 12:37:31 ls
+   64  2025-11-08 12:38:13 mkdir -p ~/lab-repo/evidence 
+   65  2025-11-08 12:38:16 ls
+   66  2025-11-08 12:46:14 cp ~/ubuntu_setup_history.txt ~/evidence_* ~/lab_nmap.initial.txt ~/evidence_curl_setup_head.txt ~/evidence_curl_home_head.txt ~/evidence_apache_status.txt ~/evidence_php_version.txt ~/evidence_php_modules.txt ~/evidence_listen80.txt ~/evidence_dvwa_config.inc.php ~/lab_nmap_initial.txt ~lab-repo/evidence/ 2>/dev/null || true
+   67  2025-11-08 12:47:01 ls -l ~/lab-repo/evidence 
+   68  2025-11-08 12:49:56 cd ~lab-repo
+   69  2025-11-08 12:50:10 ls
+   70  2025-11-08 12:50:26 cd ~/lab-repo
+   71  2025-11-08 12:52:23 mkdie -p evidence
+   72  2025-11-08 12:52:31 mkdir -p evidence
+   73  2025-11-08 12:52:33 ls
+   74  2025-11-08 12:53:05 export HISTTIMEFORMAT="%F %T"
+   75  2025-11-08 12:53:11 export HISTTIMEFORMAT="%F %T "
+   76  2025-11-08 12:54:41 history > evidence/ubuntu_setup_history.txt 

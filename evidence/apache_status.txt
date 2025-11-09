@@ -1,0 +1,22 @@
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2025-11-08 11:34:57 UTC; 1h 20min ago
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 6818 ExecStart=/usr/sbin/apachectl start (code=exited, status=0/SUCCESS)
+   Main PID: 6822 (apache2)
+      Tasks: 8 (limit: 1660)
+     Memory: 17.8M (peak: 20.2M)
+        CPU: 560ms
+     CGroup: /system.slice/apache2.service
+             ├─6822 /usr/sbin/apache2 -k start
+             ├─6824 /usr/sbin/apache2 -k start
+             ├─6825 /usr/sbin/apache2 -k start
+             ├─6826 /usr/sbin/apache2 -k start
+             ├─6827 /usr/sbin/apache2 -k start
+             ├─6828 /usr/sbin/apache2 -k start
+             ├─6902 /usr/sbin/apache2 -k start
+             └─6949 /usr/sbin/apache2 -k start
+
+Nov 08 11:34:57 ubuntu-lab systemd[1]: Starting apache2.service - The Apache HTTP Server...
+Nov 08 11:34:57 ubuntu-lab apachectl[6821]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Nov 08 11:34:57 ubuntu-lab systemd[1]: Started apache2.service - The Apache HTTP Server.

@@ -1,0 +1,23 @@
+HTTP/1.1 302 Found
+Date: Sat, 08 Nov 2025 13:05:50 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Set-Cookie: security=impossible; path=/; HttpOnly
+Set-Cookie: PHPSESSID=vvroqr573s2lqs7our0re5qbu6; expires=Sun, 09 Nov 2025 13:05:50 GMT; Max-Age=86400; path=/; HttpOnly; SameSite=Strict
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: PHPSESSID=j78blf3gsvdtnlsnb9e3vv86i6; expires=Sun, 09 Nov 2025 13:05:50 GMT; Max-Age=86400; path=/; HttpOnly; SameSite=Strict
+Location: login.php
+Content-Type: text/html; charset=UTF-8
+
+HTTP/1.1 200 OK
+Date: Sat, 08 Nov 2025 13:05:50 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Set-Cookie: security=impossible; path=/; HttpOnly
+Set-Cookie: PHPSESSID=k29l3cplqmt8r9r9a0iof2emoj; expires=Sun, 09 Nov 2025 13:05:50 GMT; Max-Age=86400; path=/; HttpOnly; SameSite=Strict
+Expires: Tue, 23 Jun 2009 12:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: PHPSESSID=r74n4u87l2ck7ug2t33k83g8d4; expires=Sun, 09 Nov 2025 13:05:50 GMT; Max-Age=86400; path=/; HttpOnly; SameSite=Strict
+Content-Type: text/html;charset=utf-8
+
